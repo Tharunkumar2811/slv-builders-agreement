@@ -25,7 +25,12 @@ def generate():
     total_cost = total_area * rate
     agreement_date = datetime.now().strftime("%d %B %Y")
 
-    doc = DocxTemplate("agreement_template.docx")
+    template_path = os.path.join(
+    os.path.dirname(__file__),
+    "agreement_template.docx"
+)
+
+    doc = DocxTemplate(template_path)
 
     floor_cost = sqft * rate
 
@@ -44,7 +49,17 @@ def generate():
 
     doc.render(context)
 
-    output_file = f"output/Construction_Agreement_{client_name}.docx"
+    output_dir = os.path.join(
+    os.path.dirname(__file__),
+    "output"
+)
+
+    os.makedirs(output_dir, exist_ok=True)
+
+    output_file = os.path.join(
+    output_dir,
+    f"Construction_Agreement_{client_name}.docx"
+)
 
     doc.save(output_file)
 
