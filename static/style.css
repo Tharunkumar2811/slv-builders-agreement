@@ -1,0 +1,74 @@
+body{
+    background:#f4f7fb;
+    font-family:Segoe UI,sans-serif;
+}
+
+.main-card{
+    background:white;
+    max-width:900px;
+    margin:auto;
+    padding:40px;
+    border-radius:20px;
+    box-shadow:0 10px 40px rgba(0,0,0,0.08);
+}
+
+.company-title{
+    color:#1B365D;
+    font-size:42px;
+    font-weight:800;
+}
+
+.subtitle{
+    color:#6c757d;
+}
+
+.form-control{
+    min-height:50px;
+    border-radius:12px;
+}
+
+.calculate-btn{
+    width:100%;
+    background:#1B365D;
+    color:white;
+    border:none;
+    border-radius:12px;
+    padding:15px;
+    font-size:18px;
+    font-weight:600;
+}
+
+.result-card{
+    background:#eef3fa;
+    padding:20px;
+    border-radius:12px;
+    margin-top:20px;
+    text-align:center;
+}
+
+.result-card h3{
+    color:#1B365D;
+}
+
+.result-card h2{
+    color:#1B365D;
+    font-weight:800;
+}
+.calculate-btn:hover{
+    background:#274675;
+}
+
+.generate-btn{
+    width:100%;
+    background:#198754;
+    color:white;
+    border:none;
+    border-radius:12px;
+    padding:15px;
+    font-size:18px;
+    font-weight:600;
+}
+
+.generate-btn:hover{
+    background:#157347;
+}
